@@ -13,16 +13,24 @@ body {
     height: 100vh;
     width: 100vw;
 	overflow: hidden;
+    background: url('images/madera.jpg') no-repeat center center fixed;
+
+        background-size: cover; /* for IE9+, Safari 4.1+, Chrome 3.0+, Firefox 3.6+ */
+        -webkit-background-size: cover; /* for Safari 3.0 - 4.0 , Chrome 1.0 - 3.0 */
+        -moz-background-size: cover; /* optional for Firefox 3.6 */ 
+        -o-background-size: cover; /* for Opera 9.5 */
+        margin: 0; /* to remove the default white margin of body */
+        padding: 0; /* to remove the default white margin of body */
 	background: #f1c40f;
 }
 
 .flipbook {
-    width: 1000px;
-    height: 600px;
+    width: 1200px;
+    height: 800px;
 }
 
 .flipbook .hard {
-    background: #c0392b !important;
+    background: #190d0c !important;
     color: #fff;
     font-weight: bold;
     border: none; 
@@ -36,7 +44,7 @@ body {
 }
 
 .flipbook .page {
-    background: white;
+    background: #190d0c;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -46,7 +54,7 @@ body {
 }
 
 .page img{
-	width: 70%;
+	width: 100%;
 	object-fit: cover;
 	margin: auto;
 }
